@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Peppermint :: Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <!--favicon --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/mphcafiedeanpmilmmlcjhkcgddphicp">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!--main content -->
+  <div class="container main-wrap video-page">
+    <div class="video-container">
+      <div class="title-container">
+       <div class="index-header video-header">
+        <h2>The easiest way to send a message</h2>
+       </div>
+      </div>
+      <div class="overlay-container">
+      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <!--<iframe class="embed-responsive-item" id="videoiframe" src="//www.youtube.com/embed/mzmYvgESLgI?rel=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>-->
+      </div>
+    </div>
+
+   <div class="col-md-12 bot-section video-page-bot">
+     <div class="col-md-4 col-md-offset-2">
+       <h3 id="hide-mobile">Send audio messages and automatically transcribe audio to text</h3>
+       <a class="btn custom-btn" id="custom-btn-id">
+        <i class="fa fa-chrome fa-2x pull-left hidden-xs"></i>
+        <i class="fa fa-android fa-2x pull-left" id="android"></i>
+        <i class="pull-left mobile" id="phone-mobile"><img class="phone" src="https://d1zyqoabdcoj65.cloudfront.net/img/home_mobile_03.png"></i>
+        <span class="small" id="small-id">Get the App for </span><br> <span class="big" id="big-id">Google Chrome</span></a>
+      </div>        
+      <div class="col-md-4">
+
+        <h3 id="header-mobile">Get apps for the iPhone, Android and more</h3>
+        <div class="col-md-12 msg-hold">
+         <h5 class="validation" id="val-msg">Please enter a valid email address</h5>
+       </div>
+       <form id="val-form" method="POST" novalidate>
+         <input class="form-control custom-input" type="email" name="email" placeholder="Email Address" maxlength="254" id="val-inp">
+         <button type="submit" class="custom-btn-1">Send Me All the Apps</button>
+
+       </form>
+     </div>
+   </div>
+ </div>
+ <!--main content ends -->
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Thank You!</h4>
+      </div>
+      <div class="modal-body">
+        Check your email <span id="mail-modal"></span><br> to get links to all the Peppermint apps
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-button" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal button-->
+ <div class="modal fade" id="myModal-button" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">This app is for Google Chrome only.</h4>
+      </div>
+      <div class="modal-body text-center dl-chrome">
+        <a href="https://www.google.com/chrome/browser/desktop/" target="_blank">Download Google Chrome</a>
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="modal-button" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer -->
+<div class="footer">   
+  <div class="container">   
+   <ul class="col-sm-8 coppy-right">
+    <a href="http://peppermint.com"><li><img src="https://d1zyqoabdcoj65.cloudfront.net/img/home_desktop_07.png"></li></a>
+    <li class="hidden-xs">&#169; Peppermint 2015</li>
+  </ul>
+
+  <ul class="col-sm-3 support">
+    <a href="contact.html"><li>Contact</li></a>
+    <a href="privacy_policy.html"><li>Privacy Policy</li></a>
+  </ul> 
+</div>
+</div>
+<!--footer ends-->
+
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+ <!--[if gte IE 8]>
+ <script src="js/jquery-1.9.0.min.js"></script> 
+ <![endif]-->
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/screen_size.js"></script>
+ <script src="js/custom.js"></script>
+ <!--<script src="js/videoplay.js"></script>-->
+ <script> fnIsAppleMobile(); </script>
+</body>
+</html>
